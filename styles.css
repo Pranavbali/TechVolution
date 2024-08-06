@@ -1,0 +1,324 @@
+/* Custom styles for TechVolution 2024 website */
+
+/* Color Palette */
+:root {
+  --primary-color: #E6CCB2;
+  --secondary-color: #DDB892;
+  --tertiary-color: #B08968;
+  --quaternary-color: #7F5539;
+  --quinary-color: #9C6644;
+}
+
+
+/* Navbar */
+.navbar-brand {
+  font-weight: bold;
+  color: #ffffff; 
+}
+
+.navbar-nav .nav-link {
+  color: #000000; 
+}
+
+.navbar-nav .nav-link:hover {
+  color: var(--tertiary-color); 
+}
+#home {
+  opacity: 0;
+}
+
+
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+    transform: translateY(50px); 
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0); 
+  }
+}
+
+
+.hero-section {
+  animation: fadeIn 1s ease-in-out 1s forwards; 
+}
+
+/* Hero Section */
+.hero-section {
+  background-size: cover;
+  background-position: center;
+  color: #ffffff; 
+  text-align: center;
+  padding-top: 100px; 
+  height: 100vh; 
+  position: relative; 
+}
+
+
+.navbar {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  z-index: 1000; 
+}
+
+/* Registration Button */
+.registration-button {
+  position: absolute;
+  bottom: 20px; 
+  left: 50%;
+  transform: translateX(-50%);
+}
+
+.registration-button .btn {
+  font-size: 18px;
+  padding: 15px 30px;
+  background-color: var(--tertiary-color); 
+  border-color: var(--tertiary-color); 
+}
+
+.registration-button .btn:hover {
+  background-color: var(--quaternary-color); 
+  border-color: var(--quaternary-color); 
+}
+
+/* Footer */
+.footer {
+  background-color: var(--primary-color); 
+  color: #ffffff; 
+  padding: 30px 0;
+  display: flex;
+  flex-direction: column;
+}
+
+.footer p {
+  margin-bottom: 10px;
+}
+
+.footer a {
+  color: #ffffff; 
+}
+
+.footer a:hover {
+  color: var(--tertiary-color); 
+}
+
+
+@media only screen and (max-width: 768px) {
+  .footer {
+    padding: 20px 0; 
+  }
+  
+  .footer .container {
+    text-align: center; 
+  }
+  
+  .footer .row {
+    flex-direction: column; 
+  }
+  
+  .footer .col-md-6 {
+    width: 100%; 
+    text-align: center; 
+    margin-bottom: 15px; 
+  }
+  
+  .footer .list-inline {
+    display: flex;
+    justify-content: center; 
+  }
+  
+  .footer .list-inline-item {
+    margin-right: 10px;  
+  }
+}
+
+
+@media (max-width: 768px) {
+  
+}
+.libre-franklin {
+  font-family: "Libre Franklin", sans-serif;
+  font-optical-sizing: auto;
+  font-weight: 400; 
+  font-style: normal;
+}
+
+
+.hero-section h1,
+.hero-section p,
+.navbar-brand {
+  
+  font-family: "Libre Franklin", sans-serif;
+  font-optical-sizing: auto;
+  font-weight: 700; 
+  font-style: normal;
+}
+
+.section {
+  text-align: center;
+  border-bottom: 2px solid #000; 
+  padding: 30px 20px 30px 20px; 
+}
+/* About Section */
+@media only screen and (max-width: 768px) {
+  
+  .responsive-about .about-item {
+    margin-bottom: 20px; 
+  }
+
+  
+  .responsive-about .about-section {
+  }
+}
+
+
+.about-section {
+  margin-top: 30px;
+  position: relative;
+  overflow: hidden;
+}
+
+.about-content {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: flex-start;
+}
+
+.about-item {
+  border: 1px solid #e6ccb2;
+  border-radius: 5px;
+  padding: 15px;
+  margin: 10px;
+  width: calc(50% - 20px);
+  box-sizing: border-box;
+  background-color: rgba(221, 184, 146,);
+}
+
+.about-item h3 {
+  color: #ddb892;
+  margin-bottom: 10px;
+}
+
+
+@media only screen and (max-width: 768px) {
+  .about-item {
+    width: calc(100% - 20px); 
+  }
+}
+
+
+#features {
+  margin-top: 30px;
+  margin-bottom: 10px;
+   
+}
+.card:hover{
+  transition: transform 0.3s ease, box-shadow 0.3s ease; 
+  transform: scale(1.05); 
+  box-shadow: 0 0 20px rgba(0, 0, 0, 0.3);
+}
+#testimonials {
+  margin-top: 30px;
+  padding: 50px 20px; 
+}
+
+.testimonial {
+  text-align: center; 
+}
+
+@media (min-width: 768px) {
+  #testimonials {
+    padding: 100px 50px; 
+  }
+
+  .testimonial {
+    max-width: 500px; 
+    margin: 0 auto; 
+  }
+}
+
+#prizes {
+  margin-top: 30px;
+  margin-bottom: 10px;
+  
+}
+#events{
+  margin-top:30px;
+  margin-bottom:10;
+  ;
+  
+}
+#gallery {
+  padding: 40px 0;
+}
+
+.gallery-img {
+  width: 100%;
+  height: auto;
+  border-radius: 5px;
+  margin-bottom: 20px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1); 
+  transition: transform 0.3s ease, box-shadow 0.3s ease; 
+}
+
+.gallery-img:hover {
+  transform: scale(1.05); 
+  box-shadow: 0 0 20px rgba(0, 0, 0, 0.3); 
+}
+#registration {
+  background-size: cover;
+  background-position: center;
+  margin-top:30px;
+  margin-bottom:10px
+}
+.registration-box {
+  border: 2px solid #ccc;
+  border-radius: 10px;
+  padding: 20px;
+  max-width: 600px;
+  margin: 0 auto;
+  background-color: #f9f9f9;
+  overflow-y: scroll;
+  max-height: 500px; 
+}
+
+#registration-form .form-group {
+  margin-bottom: 20px;
+}
+
+#registration-form label {
+  font-weight: bold;
+}
+
+#registration-form input[type="text"],
+#registration-form input[type="date"],
+#registration-form input[type="email"],
+#registration-form select,
+#registration-form textarea {
+  width: 100%;
+  padding: 10px;
+  border: 2px solid #ccc;
+  border-radius: 5px;
+}
+
+#registration-form input[type="radio"],
+#registration-form input[type="checkbox"] {
+  margin-right: 10px;
+  border:1px solid black;
+}
+
+#registration-form button[type="submit"] {
+  padding: 10px 20px;
+  border: none;
+  border-radius: 5px;
+  background-color: #9C6644;
+  color: #fff;
+  cursor: pointer;
+}
+
+#registration-form button[type="submit"]:hover {
+  background-color:#7F5539;
+}
